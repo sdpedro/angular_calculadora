@@ -1,0 +1,82 @@
+<div class="row module">
+    <div class="col-sm-12 col-md-2 col-lg-3 col-xl-3"></div>
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="card calculator shadow-lg rounded-lg">
+            <div class="card-body">
+
+                <div class="row fila">
+                    <div class="col-12">
+                        <input type="text" class="form-control" value="0" [(ngModel)]="display" disabled />
+                        <!-- <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" disabled /> -->
+                    </div>
+                </div>
+
+                <div class="row fila">
+                    <div class="col-2">
+                        <button type="button" (click)="addValue('7')" class="border btn btn-secondary btn-lg btn-block text-center">7</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" (click)="addValue('8')" class="border btn btn-secondary btn-lg btn-block text-center">8</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" (click)="addValue('9')" class="border btn btn-secondary btn-lg btn-block text-center">9</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" (click)="addOperador('/')" class="border btn btn-secondary btn-lg btn-block text-center">/</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" (click)="resetValues()" class="border btn btn-danger btn-lg btn-block text-center">C</button>
+                    </div>
+                </div>
+
+                <div class="row fila">
+                    <div class="col-2">
+                        <button type="button" (click)="addValue('4')" class="border btn btn-secondary btn-lg btn-block text-center">4</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" (click)="addValue('5')" class="border btn btn-secondary btn-lg btn-block text-center">5</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" (click)="addValue('6')" class="border btn btn-secondary btn-lg btn-block text-center">6</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" (click)="addOperador('*')" class="border btn btn-secondary btn-lg btn-block text-center">x</button>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+
+                <div class="row fila">
+                    <div class="col-2">
+                        <button type="button" (click)="addValue('1')" class="border btn btn-secondary btn-lg btn-block text-center">1</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" (click)="addValue('2')" class="border btn btn-secondary btn-lg btn-block text-center">2</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" (click)="addValue('3')" class="border btn btn-secondary btn-lg btn-block text-center">3</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" (click)="addOperador('-')" class="border btn btn-secondary btn-lg btn-block text-center">-</button>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+
+                <div class="row fila">
+                    <div class="col-4">
+                        <button type="button" (click)="addValue('0')" class="border btn btn-secondary btn-lg btn-block text-center">0</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" (click)="addValue('.')" class="border btn btn-secondary btn-lg btn-block text-center">.</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" (click)="addOperador('+')" class="border btn btn-secondary btn-lg btn-block text-center">+</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" (click)="executeOperacao()" class="border btn btn-success btn-lg btn-block text-center">=</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

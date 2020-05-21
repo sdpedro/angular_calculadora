@@ -1,0 +1,15 @@
+.calculator {
+    background-color: #424242;
+}
+
+.fila {
+    margin-bottom: 10px;
+}
+
+.fila input {
+    text-align: center;
+}
+
+.module {
+    margin-top: 10%;
+}
